@@ -39,8 +39,9 @@ import { CondominoListComponent } from './proyectos/condominos/condomino-list/co
     MatInputModule,
     MatIconModule,
     MatToolbarModule,
+    MatSelectModule,
     MatButtonModule,
-    MatSelectModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

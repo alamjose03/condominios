@@ -65,7 +65,7 @@
                 <span>Estado Civil</span>
                 <mat-form-field class="example-width" appearance="outline">
                     <mat-select [(ngModel)]="condomino.estadoCivil" name="estado">
-                        <mat-option *ngFor="let estado of estados" [value]="estado.model">
+                        <mat-option *ngFor="let estado of estados" [value]="estado.model1">
                           {{estado.valor}}
                         </mat-option>
                     </mat-select>

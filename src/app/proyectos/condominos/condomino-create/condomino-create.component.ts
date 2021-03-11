@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Condomino } from '../../condomino.models';
 
 interface Estado {
-  model: string;
+  model1: string;
   valor: string;
 }
 interface Sexo{
@@ -31,9 +31,9 @@ export class CondominoCreateComponent implements OnInit {
     this.condomino = new Condomino("","","",0,"","",0,"","",new Date());
   }
   estados: Estado[] = [
-    {model: 'soltero(a)', valor: 'Soltero(a)'},
-    {model: 'casado(a)', valor: 'Casado(a)'},
-    {model: 'viudo(a)', valor: 'Viudo(a)'}
+    {model1: 'soltero(a)', valor: 'Soltero(a)'},
+    {model1: 'casado(a)', valor: 'Casado(a)'},
+    {model1: 'viudo(a)', valor: 'Viudo(a)'}
   ];
   sexos: Sexo[] = [
     {model: 'masculino', valor: 'Masculino'},
