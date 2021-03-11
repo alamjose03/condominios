@@ -44,10 +44,12 @@
             </td>
             <td>
                 <span>Sexo</span>
-                <mat-form-field class="example-width" appearance="outline">    
-                    <input matInput placeholder="Sexo"
-                    type="text" name="sexo" id="sexo"
-                    [(ngModel)]= "condomino.sexo">
+                <mat-form-field class="example-width" appearance="outline">
+                    <mat-select [(ngModel)]="condomino.sexo" name="sexo">
+                        <mat-option *ngFor="let sexo of sexos" [value]="sexo.model">
+                          {{sexo.valor}}
+                        </mat-option>
+                    </mat-select>
                 </mat-form-field>
             </td>
             <td>
@@ -61,10 +63,12 @@
             </td>
             <td>
                 <span>Estado Civil</span>
-                <mat-form-field class="example-width" appearance="outline">    
-                    <input matInput placeholder="Estado Civil"
-                    type="text" name="estadoCi" id="estadoCi"
-                    [(ngModel)]= "condomino.estadoCivil">
+                <mat-form-field class="example-width" appearance="outline">
+                    <mat-select [(ngModel)]="condomino.estadoCivil" name="estado">
+                        <mat-option *ngFor="let estado of estados" [value]="estado.model">
+                          {{estado.valor}}
+                        </mat-option>
+                    </mat-select>
                 </mat-form-field>
             </td>
           </tr>
@@ -107,3 +111,4 @@
         <span class="title">Datos Familiares</span>
     </mat-toolbar>
 </div>
+{{diagnostic}}
